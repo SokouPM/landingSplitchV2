@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "Tisa Sans Pro";
+    src: url('/fonts/...');
+}
+
+h2 {
+    font-size: 71px;
+    text-align: center;
+    color: #363A65;
+}
+
+.none {
+    display: none;
+}
+
+/*/ Button /*/
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none !important;
+}
+
+#wthBtn, #bordBtn {
+    border-radius: 50px;
+}
+
+#innerBtn {
+    border-radius: 20px;
+}
+
+#wthBtn {
+    border: 10px solid #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+#bordBtn {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    color: white;
+    background: white;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+}
+
+#bordBtn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+}
+
+#innerBtn {
+    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    -webkit-background-clip: text, border-box;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none !important;
+}
+
+#wthBtn:hover, #innerBtn:hover {
+    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: white;
+    box-shadow: none;
+}
+
+#innerBtn:hover {
+    cursor: pointer;
+}
+
+span {
+    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    -webkit-background-clip: text, border-box;
+    -webkit-text-fill-color: transparent;
+}
+
+/******************************** Index Page ********************************/
+
+#index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+#logo, #SVGLogo, #bordBtn {
+    margin: auto;
+    width: max-content;
+}
+
+#logo img {
+    width: 300px;
+}
+
+/******************************** description Page ********************************/
+
+#desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#passion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/******************************** emotion Page ********************************/
+
+#passionTitle {
+    margin-top: 13vh;
+    margin-bottom: 5vh;
+}
+
+.slide {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.horizontalBlock {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+}
+
+#sliderPlus {
+    position: fixed;
+    right: 10vh;
+    top: 36vh;
+}
+
+#background2 {
+    position: fixed;
+    right: 0;
+    top: 10vh;
+    z-index: -10;
+}
+
+#background1 {
+    position: fixed;
+    right: 0;
+    top: 50vh;
+    z-index: -10;
+}
+
+/******************************** action Page ********************************/
+
+#action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#exchange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#iconsExchange {
+    display: flex;
+    align-items: flex-start;
+}
+
+#iconsExchange img {
+    margin: 15px;
+}
+
+#iconsExchange img:nth-child(2) {
+    margin-top: 70px;
+}
+
+/******************************** action Page ********************************/
+
+#beFirst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
