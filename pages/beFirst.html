@@ -30,7 +30,6 @@
 
     <script>
         setTimeout(function () {
-            let h2 = document.querySelector("#beFirst h2");
             let bckGrndImgBefirs1 = document.getElementById("bckGrndImgBefirs1");
             let bckGrndImgBefirs2 = document.getElementById("bckGrndImgBefirs2");
 
@@ -44,31 +43,54 @@
             let bckGrndImgBefirs9 = document.getElementById("bckGrndImgBefirs9");
             let bckGrndImgBefirs10 = document.getElementById("bckGrndImgBefirs10");
 
-            h2.classList.remove("h2beFirstEnterAnim");
-            h2.classList.add("h2beFirstLeaveAnim");
-
             bckGrndImgBefirs1.classList.remove("imgBefirstEnterTop");
-            bckGrndImgBefirs1.classList.add("imgBefirstLeaveTop");
+            bckGrndImgBefirs1.classList.add("imgBefirstAnim1");
             bckGrndImgBefirs2.classList.remove("imgBefirstEnterTop");
-            bckGrndImgBefirs2.classList.add("imgBefirstLeaveTop");
+            bckGrndImgBefirs2.classList.add("imgBefirstAnim2");
             bckGrndImgBefirs4.classList.remove("imgBefirstEnterTop");
-            bckGrndImgBefirs4.classList.add("imgBefirstLeaveTop");
+            bckGrndImgBefirs4.classList.add("imgBefirstAnim1");
             bckGrndImgBefirs5.classList.remove("imgBefirstEnterTop");
-            bckGrndImgBefirs5.classList.add("imgBefirstLeaveTop");
+            bckGrndImgBefirs5.classList.add("imgBefirstAnim2");
 
 
             bckGrndImgBefirs6.classList.remove("imgBefirstEnterBottom");
-            bckGrndImgBefirs6.classList.add("imgBefirstLeaveBottom");
+            bckGrndImgBefirs6.classList.add("imgBefirstAnim2");
             bckGrndImgBefirs7.classList.remove("imgBefirstEnterBottom");
-            bckGrndImgBefirs7.classList.add("imgBefirstLeaveBottom");
+            bckGrndImgBefirs7.classList.add("imgBefirstAnim1");
             bckGrndImgBefirs9.classList.remove("imgBefirstEnterBottom");
-            bckGrndImgBefirs9.classList.add("imgBefirstLeaveBottom");
+            bckGrndImgBefirs9.classList.add("imgBefirstAnim2");
             bckGrndImgBefirs10.classList.remove("imgBefirstEnterBottom");
-            bckGrndImgBefirs10.classList.add("imgBefirstLeaveBottom");
+            bckGrndImgBefirs10.classList.add("imgBefirstAnim1");
             setTimeout(function () {
-                location.href = "enterInGame.html";
-            }, 1000);
-        }, 4000);
+                let h2 = document.querySelector("#beFirst h2");
+
+
+                h2.classList.remove("h2beFirstEnterAnim");
+                h2.classList.add("h2beFirstLeaveAnim");
+
+                bckGrndImgBefirs1.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs1.classList.add("imgBefirstLeaveTop");
+                bckGrndImgBefirs2.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs2.classList.add("imgBefirstLeaveTop");
+                bckGrndImgBefirs4.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs4.classList.add("imgBefirstLeaveTop");
+                bckGrndImgBefirs5.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs5.classList.add("imgBefirstLeaveTop");
+
+
+                bckGrndImgBefirs6.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs6.classList.add("imgBefirstLeaveBottom");
+                bckGrndImgBefirs7.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs7.classList.add("imgBefirstLeaveBottom");
+                bckGrndImgBefirs9.classList.remove("imgBefirstAnim2");
+                bckGrndImgBefirs9.classList.add("imgBefirstLeaveBottom");
+                bckGrndImgBefirs10.classList.remove("imgBefirstAnim1");
+                bckGrndImgBefirs10.classList.add("imgBefirstLeaveBottom");
+                setTimeout(function () {
+                    location.href = "enterInGame.html";
+                }, 1000);
+            }, 4000);
+        }, 1000);
     </script>
 </body>
 

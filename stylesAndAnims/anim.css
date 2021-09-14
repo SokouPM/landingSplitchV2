@@ -487,29 +487,35 @@
 }
 
 .imgBefirstAnim1 {
-    animation: myAnim 2s ease 0s infinite normal forwards;
+    animation: imgBefirstAnim1 1s linear 0s infinite normal forwards;
 }
 
-@keyframes myAnim {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
+@keyframes imgBefirstAnim1 {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 .imgBefirstAnim2 {
-    animation: myAnim 2s ease 0s infinite normal forwards;
+    animation: imgBefirstAnim2 1s linear 0s infinite normal forwards;
 }
 
-@keyframes myAnim {
-  0% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
+@keyframes imgBefirstAnim2 {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
 }
 
 /******************************** enterInGame Page ********************************/

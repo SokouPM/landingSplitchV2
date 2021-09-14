@@ -24,6 +24,8 @@ h2 {
     color: #363A65;
     font-family: "Tisa Sans Pro";
     font-weight: 900;
+    line-height: 77px;
+    padding: 10px 0;
 }
 
 .none {
