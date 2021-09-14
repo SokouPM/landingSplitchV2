@@ -48,13 +48,13 @@
         width: 0;
     }
     100% {
-        width: 28%;
+        width: 100%;
     }
 }
 
 @keyframes h2weSplitchLeaveAnim {
     0% {
-        width: 28%;
+        width: 100%;
     }
     100% {
         width: 0;
@@ -80,13 +80,13 @@
         width: 0;
     }
     100% {
-        width: 40%;
+        width: 100%;
     }
 }
 
 @keyframes h2newSocialNetworkLeaveAnim {
     0% {
-        width: 40%;
+        width: 100%;
     }
     100% {
         width: 0;
@@ -116,13 +116,13 @@
         width: 0;
     }
     100% {
-        width: 43%;
+        width: 100%;
     }
 }
 
 @keyframes h2passionLeaveAnim {
     0% {
-        width: 43%;
+        width: 100%;
     }
     100% {
         width: 0;
@@ -259,13 +259,13 @@
         width: 0;
     }
     100% {
-        width: 42%;
+        width: 100%;
     }
 }
 
 @keyframes h2connectLeaveAnim {
     0% {
-        width: 42%;
+        width: 100%;
     }
     100% {
         width: 0;
@@ -291,13 +291,13 @@
         width: 0;
     }
     100% {
-        width: 50%;
+        width: 100%;
     }
 }
 
 @keyframes h2exchangeLeaveAnim {
     0% {
-        width: 50%;
+        width: 100%;
     }
     100% {
         width: 0;
@@ -413,13 +413,13 @@
         width: 0;
     }
     100% {
-        width: 60%;
+        width: 100%;
     }
 }
 
 @keyframes h2beFirstLeaveAnim {
     0% {
-        width: 60%;
+        width: 100%;
     }
     100% {
         width: 0;
@@ -484,6 +484,32 @@
         opacity: 0;
         transform: translateY(250px);
     }
+}
+
+.imgBefirstAnim1 {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.imgBefirstAnim2 {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 /******************************** enterInGame Page ********************************/
