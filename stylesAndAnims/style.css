@@ -76,11 +76,11 @@ a:visited {
     z-index: -1;
     margin: -5px;
     border-radius: inherit;
-    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
 }
 
 #innerBtn {
-    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
     -webkit-background-clip: text, border-box;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -93,7 +93,7 @@ a:visited {
 }
 
 #wthBtn:hover, #innerBtn:hover {
-    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
     -webkit-background-clip: initial;
     -webkit-text-fill-color: white;
     box-shadow: none;
@@ -104,14 +104,22 @@ a:visited {
 }
 
 span {
-    background: linear-gradient(to left, #ce16d7, #8d6bff, #2992ff, #0bbef0);
+    background: linear-gradient(to right, #ce16d7, #8d6bff, #2992ff, #0bbef0);
     -webkit-background-clip: text, border-box;
     -webkit-text-fill-color: transparent;
 }
 
+main:not(#index) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 /******************************** Index Page ********************************/
 
-#index {
+main#index {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,20 +135,39 @@ span {
     width: 300px;
 }
 
-/******************************** description Page ********************************/
+/******************************** weSplitch Page ********************************/
 
-#desc {
+/* #weSplitch {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
+} */
 
+/******************************** newSocialNetwork Page ********************************/
+
+/* #newSocialNetwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} */
+
+/******************************** passion Page ********************************/
+
+/* 
 #passion {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+} */
+
+#ballon {
+    margin-bottom: -25px;
 }
 
 /******************************** emotion Page ********************************/
@@ -176,8 +203,10 @@ span {
 
 #sliderPlus {
     position: fixed;
-    right: 10vh;
+    right: 5vw;
     top: 36vh;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 #background2 {
@@ -196,20 +225,22 @@ span {
 
 /******************************** action Page ********************************/
 
-#action {
+/* #action {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
+} */
 
-#exchange {
+/******************************** exchange Page ********************************/
+
+/* #exchange {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 #iconsExchange {
     display: flex;
@@ -224,12 +255,68 @@ span {
     margin-top: 70px;
 }
 
-/******************************** action Page ********************************/
+/******************************** beFirst Page ********************************/
+#bckGrndImgBefirs1 {
+    position: absolute;
+    left: 20vw;
+    top: 10vh
+}
+#bckGrndImgBefirs2 {
+    position: absolute;
+    left: 40vw;
+    top: 10vh;
+}
+/* #bckGrndImgBefirs3 {
+    position: absolute;
+    left: 30vw;
+    top: 10vh
+} */
+#bckGrndImgBefirs4 {
+    position: absolute;
+    right: 40vw;
+    top: 10vh;
+}
+#bckGrndImgBefirs5 {
+    position: absolute;
+    right: 20vw;
+    top: 10vh;
+}
+#bckGrndImgBefirs6 {
+    position: absolute;
+    left: 20vw;
+    bottom: 10vh;
+}
+#bckGrndImgBefirs7 {
+    position: absolute;
+    left: 40vw;
+    bottom: 10vh;
+}
+/* #bckGrndImgBefirs8 {
+    position: absolute;
+    left: 50vw;
+    bottom: 10vh;
+} */
+#bckGrndImgBefirs9 {
+    position: absolute;
+    right: 40vw;
+    bottom: 10vh;
+}
+#bckGrndImgBefirs10 {
+    position: absolute;
+    right: 20vw;
+    bottom: 10vh;
+}
 
-#beFirst {
+/******************************** enterInGame Page ********************************/
+
+/* #enterInGame {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+} */
+
+#enterInGame #wthBtn {
+    margin-top: 30px;
 }
